@@ -1,0 +1,69 @@
+#main {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+#gameBoard {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    grid-gap:1vw 1vh;
+    line-height: 20px;
+}
+#liveResults{
+    height:40vh;
+    overflow: clip;
+    border: groove;
+}
+#playersNames {
+    display:grid;
+    margin:1vh;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:1vw;
+}
+#player1{
+    
+    background: palegreen;
+    border-radius: 1vw;
+}
+#player2{
+    
+    background: palegreen;
+    border-radius: 1vw;
+}
+#playersTotals {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.cell{
+    color: green;
+    line-height:13vw;
+    font-size: 10vw;
+    width:15vw;
+    height:15vw;
+    border-radius: 2vh;
+    background:orange;
+    box-shadow: 1vw 1vw 1vw blue;
+}
+.cell:hover{
+    background:blue;
+    box-shadow: 1vw 1vw 1vw orange;
+    transform: scale(0.9,0.9);
+    transform: translate(1vw,1vw);
+}
+.winCell{
+    background:blue;
+    box-shadow: -1vw -1vw 1vw orange;
+    color:gold;
+}
+#reset{
+    
+    width:25vw;
+    height:3vh;
+}
+#resetBoard{
+    
+    width:25vw;
+    height:3vh;
+}
+
